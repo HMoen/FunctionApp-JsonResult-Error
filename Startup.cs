@@ -14,9 +14,9 @@ namespace FunctionAppJsonError
         /// <param name="builder"><see cref="IFunctionsHostBuilder"/> derived object.</param>
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder.Services
-                .AddControllers()
-                .AddNewtonsoftJson();
+            ////builder.Services
+            ////    .AddControllers()
+            ////    .AddNewtonsoftJson();
         }
     }
 }
