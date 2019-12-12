@@ -2,7 +2,7 @@
 Illustrates error when returning JsonResult containing serializer settings in a .NET Core 3.1 azure function v3 application
 
 #### Problem:
-Returning JsonResult containing JsonSerializerSettings from an azure function with .NET Core 3.1 runtime throws an unhandled exception at the host level.
+Returning JsonResult containing JsonSerializerSettings passed to the ctor from an azure function with .NET Core 3.1 runtime throws an unhandled exception at the host level.
 
 
 #### Exceptions thrown based on scenario:
