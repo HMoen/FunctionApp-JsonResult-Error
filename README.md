@@ -15,7 +15,7 @@ Returning JsonResult containing JsonSerializerSettings from an azure function wi
 #### Workaround:
 <ol>
   <li>Add Nuget Microsoft.AspNetCore.Mvc.NewtonsoftJson to your poject</li>
-<li>Add the [following](https://github.com/Azure/azure-functions-host/issues/5358#issue-535397372) in local.settings.json and Azure App Settings: "FUNCTIONS_V2_COMPATIBILITY_MODE": true</li>
+<li>Add the following in local.settings.json and Azure App Settings: "FUNCTIONS_V2_COMPATIBILITY_MODE": true</li>
   </ol>
 
 #### Discussion:
