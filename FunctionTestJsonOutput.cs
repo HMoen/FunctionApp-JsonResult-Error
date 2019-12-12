@@ -1,5 +1,6 @@
 namespace FunctionAppJsonError
 {
+    using System.Text.Json;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Http;
@@ -20,10 +21,14 @@ namespace FunctionAppJsonError
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
             var foo = new Foo("Has value");
-            var settings = new JsonSerializerSettings()
+            var settings = new JsonSerializerSettings
                                {
                                    NullValueHandling = NullValueHandling.Ignore
                                };
+            var options = new JsonSerializerOptions
+                              {
+                                  IgnoreNullValues = true,
+                              };
             return new JsonResult(foo, settings);
         }
 
