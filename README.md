@@ -1,5 +1,5 @@
 # FunctionApp-JsonResult-Error
-Illustrates error when returning JsonResult in a .NET Core 3.1 azure function application
+Illustrates error when returning JsonResult in a .NET Core 3.1 azure function v3 application
 
 #### Problem:
 Returning JsonResult from an azure function with .NET Core 3.1 runtime throws an unhandled exception at the host level.
