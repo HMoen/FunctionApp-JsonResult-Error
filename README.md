@@ -1,8 +1,8 @@
 # FunctionApp-JsonResult-Error
-Illustrates error when returning JsonResult in a .NET Core 3.1 azure function v3 application
+Illustrates error when returning JsonResult containing serializer settings in a .NET Core 3.1 azure function v3 application
 
 #### Problem:
-Returning JsonResult from an azure function with .NET Core 3.1 runtime throws an unhandled exception at the host level.
+Returning JsonResult containing JsonSerializerSettings from an azure function with .NET Core 3.1 runtime throws an unhandled exception at the host level.
 
 
 #### Exceptions thrown based on scenario:
@@ -13,10 +13,13 @@ Returning JsonResult from an azure function with .NET Core 3.1 runtime throws an
 </ol>
 
 #### Workaround:
-None
+<ol>
+  <li>Add Nuget Microsoft.AspNetCore.Mvc.NewtonsoftJson to your poject</li>
+<li>Add the [following](https://github.com/Azure/azure-functions-host/issues/5358#issue-535397372) in local.settings.json and Azure App Settings: "FUNCTIONS_V2_COMPATIBILITY_MODE": true</li>
+  </ol>
 
 #### Discussion:
-TBD
+https://github.com/Azure/azure-functions-host/issues/5376
 
 #### Solution:
 TBD
