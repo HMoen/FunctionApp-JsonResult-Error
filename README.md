@@ -1,4 +1,4 @@
-# FunctionApp-JsonResult-Error
+#### Description:
 Illustrates error when returning JsonResult containing serializer settings in a .NET Core 3.1 azure function v3 application
 
 #### Problem:
