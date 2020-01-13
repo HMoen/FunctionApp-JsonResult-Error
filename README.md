@@ -15,11 +15,13 @@ Returning JsonResult containing JsonSerializerSettings passed to the ctor from a
 #### Workaround:
 <ol>
   <li>Add Nuget Microsoft.AspNetCore.Mvc.NewtonsoftJson to your poject</li>
-<li>Add the following in local.settings.json and Azure App Settings: "FUNCTIONS_V2_COMPATIBILITY_MODE": true</li>
-  </ol>
+  <li>Add the following in local.settings.json and Azure App Settings: "FUNCTIONS_V2_COMPATIBILITY_MODE": true</li>
+</ol>
 
 #### Discussion:
 https://github.com/Azure/azure-functions-host/issues/5376
 
 #### Solution:
-TBD
+<ol>
+  <li>Add Nuget Microsoft.AspNetCore.Mvc.NewtonsoftJson to your poject</li>
+</ol>
