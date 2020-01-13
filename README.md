@@ -22,6 +22,6 @@ Returning JsonResult containing JsonSerializerSettings passed to the ctor from a
 https://github.com/Azure/azure-functions-host/issues/5376
 
 #### Solution:
-<ol>
+<ul>
   <li>Add Nuget Microsoft.AspNetCore.Mvc.NewtonsoftJson to your poject</li>
-</ol>
+</ul>
